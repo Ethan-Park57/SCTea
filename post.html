@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            .postClass {
+                text-align:center;
+
+            }
+
+
+        </style>
+    </head>
+
+    <header class="text-gray-700 body-font bg-red-600">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <img alt="USC Logo" src="https://customsitesmedia.usc.edu/wp-content/uploads/sites/55/2019/01/15234738/PrimShield-Mono_SmallUse_CardOnTrans_RGB.png" width="70" length="70">
+            <span class="ml-3 text-xl">SCTea</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover: text-white" href="membership.html">Account</a>
+            <a class="mr-5 hover: text-white" href="landingpage.html">Posts</a>
+            <a class="mr-5 hover: text-white" href="team.html">Meet the Team</a>
+            <a class="mr-5 hover: text-white" href="contact.html">Contact Us</a>
+          </nav>
+
+        </div>
+    </header>
+
+    <body>
+        <div class="postClass">
+            <form action="/action_page.php" method="get"> <br><br>
+                <label for="fname">Post Title:</label> 
+                <input type="text" id="fname" name="fname" style="width:80%;padding:1%;height:5; border:5px solid rgba(199, 69, 9, 0.986);"><br><br>
+                <label for="lname">Post Content: </label>
+                <input type="text" id="lname" name="lname" style="width:80%;padding:2%;height:20; border:5px solid rgba(199, 69, 9, 0.986);"><br><br>
+                <input type = "submit" value = "Submit" class="flex mx-auto mt-8 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg"/>
+            </form>
+        </div>
+    </body>
+</html>

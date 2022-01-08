@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>SCTea Login</title>
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>;
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js"></script>;
+<script type="module">
+  const firebaseConfig = {
+    apiKey: "AIzaSyADzqIYc1truQ5eQI7qT45QoNpHD9HLVTs",
+    authDomain: "sctea-9f2b4.firebaseapp.com",
+    databaseURL: "https://sctea-9f2b4-default-rtdb.firebaseio.com",
+    projectId: "sctea-9f2b4",
+    storageBucket: "sctea-9f2b4.appspot.com",
+    messagingSenderId: "648923577185",
+    appId: "1:648923577185:web:918d35710996cb8d2f2320",
+    measurementId: "G-2S9KN2JQH6"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</head>
+<body>
+<h1> Login </h1>
+<form action = "Dispatcher" method = "GET">
+	<label for="email">Email:</label> 
+	<input type = "text" name = "email"> <br/>
+	<label for="password">Password:</label> 
+	<input type = "text" name = "password" /> <br/>
+	<input type = "submit" value = "Submit" />
+</form>
+
+</body>
+</html>
